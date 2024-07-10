@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Title -->
+	<title>Covid-19 Report of USA</title>
+	<meta name="description" content="">
+	<!-- Responsive Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon Link -->
+	<link rel="icon" type="image/x-icon" href="assets/usa-flag.png">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		<!-- Map Container -->
+		<div id="map-container">
+			<!-- SVG element for rendering the map -->
+            <svg id="map" width="980" height="620"></svg>
+        </div>
+
+		<div id="controls"> <!-- [Modified] -->
+            <select id="data-type"> <!-- [Modified] -->
+                <option value="cases">Cases</option>
+                <option value="deaths">Deaths</option>
+            </select>
+            <select id="map-type"> <!-- [Modified] -->
+                <option value="bubble">Bubble Map</option>
+                <option value="choropleth">Choropleth</option>
+            </select>
+        </div>
+	</div>
+
+	<!-- Script tags -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://d3js.org/topojson.v2.min.js"></script>
+	<!-- Custom Script -->
+	<script src="script.js"></script>
+</body>
+
+</html>
